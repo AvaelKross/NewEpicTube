@@ -1,0 +1,1 @@
+newEpicTube = angular.module('newEpicTube', ['ngResource'])
