@@ -1,0 +1,9 @@
+@newEpicTube = angular.module('newEpicTube', ['ngResource','templates','ngRoute'])
+
+@newEpicTube.config(['$routeProvider', ($routeProvider) ->
+  $routeProvider.
+    otherwise({
+      templateUrl: "videos/index.html",
+      controller: 'videos_index'
+    }) 
+])

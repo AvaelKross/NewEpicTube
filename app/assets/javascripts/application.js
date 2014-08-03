@@ -15,5 +15,8 @@
 //= require turbolinks
 //= require lib/angular.min
 //= require lib/angular-resource.min
+//= require lib/angular-route.min
+//= require angular-rails-templates
+//= require_tree ../templates
 //= require newEpicTube
-//= require_tree .
+//= require_tree ./angular
