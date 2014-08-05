@@ -1,0 +1,25 @@
+html, body{
+  padding: 0px;
+  margin: 0px;
+}
+
+#header{
+  height: 20px;
+  background-color: #ddd;
+  padding: 10px;
+
+  .title a{
+    color: #377;
+    text-decoration: none;
+
+    &:hover{
+      text-decoration: none;
+      background-color: transparent;
+      color: #599;
+    }
+  }
+}
+
+#content{
+  padding:10px;
+}

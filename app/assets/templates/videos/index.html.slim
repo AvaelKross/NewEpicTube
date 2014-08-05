@@ -1,1 +1,4 @@
-h1 hello! {{foo}}
+h3 Popular today:
+#videos_list[ng-repeat='video in videos']
+  a ng-click="showVideo(video.id)"
+    | {{video.title}}

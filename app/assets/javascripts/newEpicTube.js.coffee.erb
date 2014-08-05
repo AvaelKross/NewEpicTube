@@ -1,9 +1,19 @@
 @newEpicTube = angular.module('newEpicTube', ['ngResource','templates','ngRoute'])
 
-@newEpicTube.config(['$routeProvider', ($routeProvider) ->
+@newEpicTube.config(['$routeProvider', '$locationProvider', ($routeProvider,$locationProvider) ->
   $routeProvider.
+    when('/', {
+      templateUrl: "videos/index.html",
+      controller: 'videos_index'
+    }).
+    when('/videos/:id', {
+      templateUrl: 'videos/show.html',
+      controller: 'videos_show'
+    }).
     otherwise({
       templateUrl: "videos/index.html",
       controller: 'videos_index'
-    }) 
+    })
+    
+  $locationProvider.html5Mode(true)
 ])
